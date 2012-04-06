@@ -1,0 +1,34 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\0ip]
+"Colour17"="88,86,185"
+"Colour16"="198,27,110"
+"Colour15"="92,129,185"
+"Colour14"="32,117,199"
+"Colour13"="204,215,92"
+"Colour12"="196,191,20"
+"Colour11"="94,171,93"
+"Colour10"="114,137,5"
+"Colour19"="49,176,166"
+"Colour18"="37,145,133"
+"Colour3"="85,85,85"
+"Colour2"="0,21,27"
+"Colour1"="255,255,255"
+"Colour0"="183,191,186"
+"Colour7"="67,74,75"
+"Colour6"="0,39,49"
+"Colour5"="112,129,131"
+"Colour4"="0,39,49"
+"Colour9"="178,81,42"
+"Colour8"="155,44,44"
+"Colour20"="233,231,202"
+"Colour21"="252,244,220"
+"LineCodePage"="UTF-8"
+"PortNumber"=dword:00000016
+"HostName"="host.com"
+"Font"="DejaVu Sans Mono"
+"FontIsBold"=dword:00000000
+"FontCharSet"=dword:00000000
+"FontHeight"=dword:0000000b
+"FontQuality"=dword:00000001
+"FontVTMode"=dword:00000004

@@ -1,0 +1,14 @@
+{
+  "color_scheme": "Packages/Color Scheme - Default/Tomorrow-Night.tmTheme",
+  "draw_minimap_border": true,
+  "font_face": "DejaVu Sans Mono",
+  "font_options":
+  [
+    "gray_antialias"
+  ],
+  "font_size": 10,
+  "highlight_line": false,
+  "tab_size": 2,
+  "theme": "Soda Light.sublime-theme",
+  "translate_tabs_to_spaces": true
+}

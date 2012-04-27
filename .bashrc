@@ -8,6 +8,9 @@ parse_git_branch() {
 # command prompt ⚛
 export PS1='\[\033[32m\]\u\[\033[00m\]@\[\033[90m\]\H\[\033[00m\] \w\[\033[90m\]$(parse_git_branch)\[\033[33m\] ⚡\[\033[00m\] '
 
+# glue bash prompt
+export PS1="\[\033[G\]$PS1"
+
 # for `ls` (BSD, OSX)
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad

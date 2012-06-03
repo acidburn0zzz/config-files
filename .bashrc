@@ -1,15 +1,21 @@
-# Colored `grep` output
-export GREP_OPTIONS='--color=auto'
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
 
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+shopt -s checkwinsize
+shopt -s cdspell
+
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
+
+#Colored `grep` output
+export GREP_OPTIONS='--color=auto'
+
 # command prompt ⚛
 export PS1='\[\033[32m\]\u\[\033[00m\]@\[\033[90m\]\H\[\033[00m\] \w\[\033[90m\]$(parse_git_branch)\[\033[33m\] ⚡\[\033[00m\] '
-
-# glue bash prompt
-export PS1="\[\033[G\]$PS1"
 
 # for `ls` (BSD, OSX)
 export CLICOLOR=1
@@ -25,5 +31,7 @@ fi
 alias ls='ls $LS_OPTIONS -hF'
 alias ll='ls $LS_OPTIONS -lhF'
 alias l='ls $LS_OPTIONS -lAhF'
+alias tlf='tail -f'
+alias mkdir='mkdir -p'
 alias c='clear'
 alias reload='. /etc/bash.bashrc;c'

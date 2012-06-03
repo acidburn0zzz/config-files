@@ -28,10 +28,16 @@ export LS_OPTIONS='--color=auto --file-type'
     eval `dircolors /etc/.dir_colors`
 fi
 
-alias ls='ls $LS_OPTIONS -hF'
-alias ll='ls $LS_OPTIONS -lhF'
-alias l='ls $LS_OPTIONS -lAhF'
+alias sha1='openssl sha1'
+alias cat='pygmentize -O style=monokai -f console256 -g'
+alias ls='ls -hF'
+alias l='ls -lAhF'
+alias lsd='l | grep "^d"'
 alias tlf='tail -f'
 alias mkdir='mkdir -p'
 alias c='clear'
 alias reload='. /etc/bash.bashrc;c'
+
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+ alias "$method"="lwp-request -m '$method'"
+done

@@ -10,5 +10,6 @@
   "highlight_line": false,
   "tab_size": 2,
   "theme": "Soda Light.sublime-theme",
-  "translate_tabs_to_spaces": true
+  "translate_tabs_to_spaces": true,
+  "rulers": [80]
 }

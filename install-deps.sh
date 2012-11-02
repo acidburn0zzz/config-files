@@ -9,3 +9,5 @@ sudo easy_install Pygments
 
 
 sudo apt-get install libwww-perl
+
+mkdir -p ~/.vim/backups ~/.vim/swaps ~/.vim/undo

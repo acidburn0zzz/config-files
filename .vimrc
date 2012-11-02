@@ -1,23 +1,26 @@
+set nocompatible
 set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
-
-syntax on
+set visualbell
 set number
 
-set encoding=utf8
 
-" Use spaces instead of tabs
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+set undodir=~/.vim/undo
+
 set expandtab
 set smarttab
 set shiftwidth=2
 set tabstop=2
+set backspace=indent,eol,start
+set encoding=utf-8 nobomb
+set ttyfast
+set title
+set ruler 
 
 set ai
 set si
 
-if &term!="linux"
-  set t_Co=256
-  colorscheme molokai
-endif
+syntax on
+set t_Co=256
+colorscheme molokai

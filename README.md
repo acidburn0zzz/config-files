@@ -1,4 +1,5 @@
-config-files
+0ip's config-files
 ============
 
-mv * .[^.]* ..
+Move all dotfiles to upper directory:
+`$ mv * .[^.]* ..`

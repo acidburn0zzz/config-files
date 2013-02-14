@@ -2,4 +2,6 @@
 ============
 
 Move all dotfiles to upper directory:
-`$ mv * .[^.]* ..`
+  1. `$ mv * .[^.]* ..`
+  2. `sudo ./install-deps.sh`
+  3. `. .bashrc`

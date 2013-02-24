@@ -3,6 +3,7 @@ set noerrorbells
 set visualbell
 set number
 
+set pastetoggle=<F10>
 
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps

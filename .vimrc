@@ -1,3 +1,6 @@
+execute pathogen#infect()
+filetype plugin indent on
+
 set nocompatible
 set noerrorbells
 set visualbell

@@ -1,7 +1,9 @@
 0ip's config-files
 ============
 
-Move all dotfiles to upper directory:
-  1. `$ mv * .[^.]* ..`
-  2. `./install-deps.sh`
-  3. `. .bashrc`
+### Installation
+
+  1. `git submodule update --init`
+  2. `$ mv * .[^.]* ..`
+  3. `./install-deps.sh`
+  4. `. .bashrc`

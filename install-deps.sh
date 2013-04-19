@@ -1,3 +1,6 @@
+# Fetch submodules
+git submodule update --init
+
 sudo apt-get update
 sudo apt-get install curl tmux vim
 

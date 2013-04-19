@@ -3,7 +3,6 @@
 
 ### Installation
 
-  1. `git submodule update --init`
+  1. `$ ./install-deps.sh`
   2. `$ mv * .[^.]* ..`
-  3. `./install-deps.sh`
-  4. `. .bashrc`
+  3. `$ . .bashrc`

@@ -11,5 +11,8 @@ sudo apt-get install libwww-perl
 
 mkdir -p ~/.vim/backups ~/.vim/swaps ~/.vim/undo
 
+curl https://raw.github.com/milkbikis/powerline-shell/master/powerline-shell.py > powerline-shell.py
+chmod +x powerline-shell.py
+
 # Ubuntu-specific
 sudo apt-get remove unity-lens-shopping command-not-found

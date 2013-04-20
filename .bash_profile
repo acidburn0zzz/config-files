@@ -3,9 +3,6 @@ for file in ~/.{exports,aliases,functions,bash_prompt}; do
 done
 unset file
 
-# init z   https://github.com/rupa/z
-. ~/code/z/z.sh
-
 shopt -s nocaseglob
 shopt -s checkwinsize
 shopt -s cdspell

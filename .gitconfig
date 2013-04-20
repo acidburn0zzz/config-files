@@ -1,5 +1,7 @@
 [user]
-	name = 0ip
-	email = me@factor.cc
+  name = 0ip
+  email = me@factor.cc
 [color]
-    ui = auto
+  ui = auto
+[push]
+  default = simple

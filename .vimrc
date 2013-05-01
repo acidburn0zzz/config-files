@@ -1,30 +1,62 @@
-execute pathogen#infect()
-filetype plugin indent on
-
 set nocompatible
-set noerrorbells
-set visualbell
-set number
 
+set nu
+
+set laststatus=2
+set timeoutlen=250
+set history=256
 set pastetoggle=<F10>
+set hlsearch
+set ignorecase
+set smartcase
 
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-set undodir=~/.vim/undo
+set nowrap
+set textwidth=0
 
+set backspace=indent,eol,start
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 set smarttab
-set shiftwidth=2
-set tabstop=2
-set backspace=indent,eol,start
-set encoding=utf-8 nobomb
-set ttyfast
-set title
-set ruler 
 
-set ai
-set si
+set novisualbell
+set noerrorbells
+
+set ruler
 
 syntax on
-set t_Co=256
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'Rip-Rip/clang_complete'
+let g:clang_close_preview = 1
+
+Bundle 'majutsushi/tagbar'
+map <F4> :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'honza/vim-snippets'
+Bundle 'garbas/vim-snipmate'
+
+Bundle 'anzaika/go.vim'
+
+Bundle 'tpope/vim-fugitive'
+
+Bundle 'scrooloose/nerdtree'
+map <F3> :NERDTreeToggle<CR>
+
+Bundle 'Lokaltog/vim-powerline'
+let g:Powerline_symbols = 'fancy'
+
+Bundle 'molokai'
 colorscheme molokai
+
+filetype plugin indent on

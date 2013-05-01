@@ -38,8 +38,10 @@ Bundle 'Rip-Rip/clang_complete'
 let g:clang_close_preview = 1
 
 Bundle 'majutsushi/tagbar'
-map <F4> :TagbarToggle<CR>
+map <F6> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
+autocmd VimEnter * :TagbarToggle
+autocmd VimEnter * :TagbarToggle
 
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -51,7 +53,7 @@ Bundle 'anzaika/go.vim'
 Bundle 'tpope/vim-fugitive'
 
 Bundle 'scrooloose/nerdtree'
-map <F3> :NERDTreeToggle<CR>
+map <F5> :NERDTreeToggle<CR>
 
 Bundle 'Lokaltog/vim-powerline'
 let g:Powerline_symbols = 'fancy'

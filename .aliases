@@ -15,6 +15,5 @@ alias lsd='l | grep "^d"'
 
 alias c='pygmentize -O style=monokai -f console256 -g'
 alias tlf='tail -f'
-alias mkdir='mkdir -p'
-alias df='df -hhT'
-alias shred='shred -uvzn3'
+alias list-hdd='df -hhT'
+alias shred-file='shred -uvzn3'

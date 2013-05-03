@@ -51,6 +51,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'anzaika/go.vim'
 
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
 
 Bundle 'scrooloose/nerdtree'
 map <F5> :NERDTreeToggle<CR>

@@ -4,5 +4,4 @@
 ### Installation
 
   1. `$ ./install-deps.sh`
-  2. `$ mv * .[^.]* ..`
-  3. `$ . .bashrc`
+  2. `$ . ~/.bashrc`

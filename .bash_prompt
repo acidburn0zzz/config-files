@@ -5,7 +5,7 @@ fi
 [ -n "$TMUX" ] && export TERM=screen-256color
 
 function _update_ps1() {
-   export PS1="$(~/powerline-shell.py $?)"
+   export PS1="$(~/powerline-shell.py --mode='flat' $?)"
 }
 
 export PROMPT_COMMAND="_update_ps1"

@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install curl tmux vim-nox clang libclang-dev exuberant-ctags git libwww-perl cmake
+sudo apt-get install curl tmux vim-nox clang libclang-dev exuberant-ctags libwww-perl cmake
 
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 

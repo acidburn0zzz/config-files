@@ -2,6 +2,4 @@
 ============
 
 ### Installation
-
-  1. `$ ./install-deps.sh`
-  2. `$ . ~/.bashrc`
+$ ./install-deps.sh`

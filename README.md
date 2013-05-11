@@ -2,4 +2,4 @@
 ============
 
 ### Installation
-$ ./install-deps.sh`
+`$ ./install-deps.sh`

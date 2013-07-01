@@ -11,20 +11,19 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'godlygeek/tabular'
 Bundle 'anzaika/go.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'sjl/badwolf'
 Bundle 'molokai'
 
 filetype plugin indent on
 
 set nu
 
-set laststatus=2
-set noshowmode
 set timeoutlen=250
 set history=256
 set pastetoggle=<F10>
@@ -52,4 +51,6 @@ set ruler
 nnoremap <F5> :NERDTreeToggle<CR>
 
 syntax on
-colorscheme molokai
+colorscheme badwolf
+set laststatus=2
+set noshowmode

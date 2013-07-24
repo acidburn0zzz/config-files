@@ -11,12 +11,14 @@ Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
 Bundle 'godlygeek/tabular'
 Bundle 'anzaika/go.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdtree'
+
 Bundle 'sjl/badwolf'
 Bundle 'molokai'
 
@@ -24,7 +26,7 @@ filetype plugin indent on
 
 set nu
 
-set timeoutlen=250
+set timeoutlen=50
 set history=256
 set pastetoggle=<F10>
 set ignorecase
@@ -54,3 +56,7 @@ syntax on
 colorscheme badwolf
 set laststatus=2
 set noshowmode
+
+let g:bufferline_echo=0
+let g:airline_powerline_fonts=1
+let g:airline_theme='badwolf'

@@ -12,7 +12,6 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 Bundle 'bling/vim-airline'
-Bundle 'bling/vim-bufferline'
 Bundle 'godlygeek/tabular'
 Bundle 'anzaika/go.vim'
 Bundle 'tpope/vim-fugitive'
@@ -59,4 +58,4 @@ set noshowmode
 
 let g:bufferline_echo=0
 let g:airline_powerline_fonts=1
-let g:airline_theme='badwolf'
+let g:airline_theme='luna'

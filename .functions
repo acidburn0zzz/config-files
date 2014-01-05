@@ -18,21 +18,6 @@ function f() {
     find . -name "$1"
 }
 
-# Copy w/ progress
-function cp_p () {
-  rsync -WavP --human-readable --progress $1 $2
-}
-
-function json() {
-  if [ -p /dev/stdin ]; then
-    # piping, e.g. `echo '{"foo":42}' | json`
-    python -mjson.tool | pygmentize -l javascript
-  else
-    # e.g. `json '{"foo":42}'`
-    python -mjson.tool <<< "$*" | pygmentize -l javascript
-  fi
-}
-
 # Escape UTF-8 characters into their 3-byte format
 function escape() {
   printf "\\\x%s" $(printf "$@" | xxd -p -c1 -u)

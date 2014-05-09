@@ -1,3 +1,9 @@
+"   __  __ _ _____ _________
+"   \ \ | |_|     V  __/  __|
+"    \ \| | | | | | |  | [__
+" [_] \___|_|_|_|_|_|  \____|
+
+
 set nocompatible
 
 filetype off
@@ -6,6 +12,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+Bundle 'junegunn/goyo.vim'
 
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -20,6 +27,10 @@ Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/nerdtree'
 
 Bundle 'sjl/badwolf'
+Bundle 'zeis/vim-kolor'
+Bundle 'junegunn/seoul256.vim'
+Bundle 'cocopon/iceberg.vim'
+Bundle 'w0ng/vim-hybrid'
 Bundle 'molokai'
 
 filetype plugin indent on
@@ -50,13 +61,15 @@ set noerrorbells
 
 set ruler
 
+set mouse=a
+
 nnoremap <F5> :NERDTreeToggle<CR>
 
 syntax on
-colorscheme badwolf
+colorscheme iceberg
 set laststatus=2
 set noshowmode
 
 let g:bufferline_echo=0
 let g:airline_powerline_fonts=1
-let g:airline_theme='luna'
+let g:airline_theme='bubblegum'

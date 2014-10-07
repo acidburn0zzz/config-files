@@ -1,10 +1,11 @@
+#!/bin/sh
+
 sudo apt-get update
 sudo apt-get purge vim*
-sudo apt-get install git curl tmux vim-nox python-pygments exuberant-ctags libwww-perl cmake
+sudo apt-get install git curl tmux python-setuptools exuberant-ctags libwww-perl cmake
 
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+sudo easy_install pygments
 
-find . -type f -name ".*" | xargs -i ln -sf `pwd`/{} ~/\{}
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# Ubuntu-specific
-sudo apt-get remove unity-lens-shopping command-not-found
+#find . -type f -name ".*" | xargs -i ln -sf `pwd`/{} ~/\{}

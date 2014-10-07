@@ -5,34 +5,34 @@
 
 
 set nocompatible
-
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'junegunn/goyo.vim'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'junegunn/goyo.vim'
 
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
-Bundle 'bling/vim-airline'
-"Bundle 'edkolev/tmuxline.vim'
-Bundle 'godlygeek/tabular'
-Bundle 'anzaika/go.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/nerdtree'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
+Plugin 'bling/vim-airline'
+"Plugin 'edkolev/tmuxline.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'anzaika/go.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdtree'
 
-Bundle 'sjl/badwolf'
-Bundle 'zeis/vim-kolor'
-Bundle 'junegunn/seoul256.vim'
-Bundle 'cocopon/iceberg.vim'
-Bundle 'w0ng/vim-hybrid'
-Bundle 'molokai'
+Plugin 'sjl/badwolf'
+Plugin 'zeis/vim-kolor'
+Plugin 'junegunn/seoul256.vim'
+Plugin 'cocopon/iceberg.vim'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'molokai'
 
+call vundle#end()
 filetype plugin indent on
 
 set nu
@@ -66,10 +66,11 @@ set mouse=a
 nnoremap <F5> :NERDTreeToggle<CR>
 
 syntax on
-colorscheme iceberg
+let g:seoul256_background=233
+colo seoul256
 set laststatus=2
 set noshowmode
 
 let g:bufferline_echo=0
 let g:airline_powerline_fonts=1
-let g:airline_theme='bubblegum'
+let g:airline_theme='luna'

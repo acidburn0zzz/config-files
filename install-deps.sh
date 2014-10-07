@@ -1,7 +1,6 @@
 #!/bin/sh
 
 sudo apt-get update
-sudo apt-get purge vim*
 sudo apt-get install git curl tmux python-setuptools exuberant-ctags libwww-perl cmake
 
 sudo easy_install pygments
